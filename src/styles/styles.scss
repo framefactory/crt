@@ -36,7 +36,7 @@ $scanlines: linear-gradient(
 
 @keyframes flicker {
   0% { opacity: 1; }
-  50% { opacity: .9; }
+  50% { opacity: .93; }
   100% { opacity: 1; }
 }
 
@@ -87,6 +87,7 @@ $scanlines: linear-gradient(
 .crt-block {
   display: block;
   animation: run 11s infinite step-end, flicker 0.08s infinite;
+  filter: contrast(150%);
 }
 
 .crt-text {
