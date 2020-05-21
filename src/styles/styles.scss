@@ -1,0 +1,114 @@
+@import "./normalize";
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+$color-background: #14181a;
+$color-background-center: #5a686f;
+$color-text: #f4ffe3;
+$color-shadow-1: #ffff00;
+$color-shadow-3: #0080ff;
+$color-shadow-2: #ff00ff;
+
+$font-crt: 'VT323', monospace;
+$smear: 0.15em;
+$blur: 0.15em;
+$scanlines-width: 3px;
+
+$scanlines: linear-gradient(
+  rgba($color-background, 0),
+  rgba($color-background, 0.5),
+  rgba($color-background, 0)
+);
+
+@mixin shadows($dist) {
+  text-shadow:
+    0 0 $blur $color-text,
+    $dist 0 $blur $color-shadow-2,
+    -$dist 0 $blur*2 $color-shadow-1,
+    $dist*2 0 $blur*2 $color-shadow-3;
+}
+
+@mixin effects($dist: $smear, $skew: 0, $tx: 0) {
+  @include shadows($dist);
+  transform: skew($skew) translateX($tx);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: .9; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes run {
+  0% { @include effects; }
+  17% { @include effects(1em, 10deg, -20%); }
+  18% { @include effects; }
+  22% { @include effects(2em, 5deg); }
+  23% { @include effects; }
+  50% { @include effects(5em, 25deg); }
+  50.5% { @include effects(1.5em, 25deg, 30%); }
+  52% { @include effects; }
+  67% { @include effects(1em, 5deg); }
+  69% { @include effects(1.5em, 50deg, 50%); }
+  70% { @include effects($smear, 10deg); }
+  75.5% { @include effects(2em, 20deg); }
+  76% { @include effects; }
+  100% { @include effects; }
+}
+
+.crt-screen {
+  background: radial-gradient($color-background-center, $color-background);
+  color: $color-text;
+  padding: 1em;
+  filter: blur(0.6px);
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    mix-blend-mode: color-burn;
+    background: $scanlines;
+    background-size: 100% $scanlines-width;
+    z-index: 1;
+  }
+}
+
+.crt-block {
+  display: block;
+  animation: run 11s infinite step-end, flicker 0.08s infinite;
+}
+
+.crt-text {
+  font-family: $font-crt;
+  font-size: 28px;
+  color: $color-text;
+//  text-shadow: $shadows;
+//  animation: run 1s infinite, flicker 0.08s infinite;
+
+  &:focus {
+    outline: none;
+    caret-color: transparent;
+  }
+
+  //&:after {
+  //  content: "";
+  //  display: inline-block;
+  //  width: 0.4em;
+  //  height: 4px;
+  //  margin-left: 0.1em;
+  //  background-color: $color-text;
+  //  @include shadows(0.1em);
+  //  animation: blink 0.9s infinite step-start;
+  //}
+}

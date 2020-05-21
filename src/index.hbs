@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
+
+    <title>{{htmlWebpackPlugin.options.title}}</title>
+
+    <style>
+        .crt-screen {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<crt-screen>
+    <crt-block>
+        <crt-text>
+            Frame Factory GmbH<br>
+            Mainframe v23.19a.1220<br>
+        </crt-text>
+        <crt-text slot="fx main">
+            [    0.005261] NODE_DATA(0) allocated [mem 0x107fd5000-0x107ffffff]<br>
+            [    0.005372] Zone ranges:<br>
+            [    0.005373]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]<br>
+            [    0.005374]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]<br>
+            [    0.005374]   Normal   [mem 0x0000000100000000-0x0000000107ffffff]<br>
+            [    0.005375]   Device   empty<br>
+            [    0.005376] Movable zone start for each node<br>
+            [    0.005378] Early memory node ranges<br>
+            [    0.005378]   node   0: [mem 0x0000000000001000-0x000000000009ffff]<br>
+            [    0.005379]   node   0: [mem 0x0000000000100000-0x00000000f6dd5fff]<br>
+            [    0.005380]   node   0: [mem 0x00000000f6de3000-0x00000000f6ecbfff]<br>
+            [    0.005380]   node   0: [mem 0x00000000f6f1b000-0x00000000f7f9afff]<br>
+            [    0.005380]   node   0: [mem 0x00000000f7fff000-0x00000000f7ffffff]<br>
+            [    0.005381]   node   0: [mem 0x0000000100000000-0x0000000107ffffff]<br>
+            [    0.005384] Zeroed struct page in unavailable ranges: 289 pages<br>
+            [    0.005385] Initmem setup node 0 [mem 0x0000000000001000-0x0000000107ffffff]<br>
+            [    0.005385] On node 0 totalpages: 1048287<br>
+            [    0.005386]   DMA zone: 64 pages used for memmap<br>
+            [    0.005386]   DMA zone: 1384 pages reserved<br>
+            [    0.005387]   DMA zone: 3999 pages, LIFO batch:0<br>
+            [    0.005412]   DMA32 zone: 16320 pages used for memmap<br>
+            [    0.005413]   DMA32 zone: 1011520 pages, LIFO batch:63<br>
+            [    0.011840]   Normal zone: 512 pages used for memmap<br>
+            [    0.011841]   Normal zone: 32768 pages, LIFO batch:7<br>
+            [    0.012062] ACPI: PM-Timer IO Port: 0x408<br>
+            [    0.012064] ACPI: Local APIC address 0xfee00000<br>
+            [    0.012068] ACPI: LAPIC_NMI (acpi_id[0x01] dfl dfl lint[0x1])<br>
+            [    0.012257] IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-23<br>
+            [    0.012260] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)<br>
+            [    0.012261] ACPI: IRQ9 used by override.<br>
+            [    0.012262] Using ACPI (MADT) for SMP configuration information<br>
+            [    0.012266] e820: update [mem 0xf73aa000-0xf73b0fff] usable ==> reserved<br>
+            [    0.012273] smpboot: Allowing 1 CPUs, 0 hotplug CPUs<br>
+    </crt-block>
+</crt-screen>
+</body>
+</html>
