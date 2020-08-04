@@ -1,0 +1,13 @@
+Mainframe version 5.4.0-31-generic
+buildd@lgw01-amd64-059
+tsc: Detected 3695.998 MHz processor
+e820: update [mem 0x00a51c00-0x0000019e]
+b221: remove [mem 0x000a0000-0x000fffff]
+MTRR default type: uncachable
+MTRR fixed ranges enabled:
+  00000-9FFFF write-back
+  A0000-FFFFF uncachable
+
+Frame Factory GmbH
+Loading menu...
+

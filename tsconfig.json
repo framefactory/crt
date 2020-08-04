@@ -2,7 +2,7 @@
     "compilerOptions": {
         "noEmit": true,
         "target": "ES6",
-        "module": "CommonJS",
+        "module": "ES6",
         "moduleResolution": "Node",
         "sourceMap": true,
         "experimentalDecorators": true,

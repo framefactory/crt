@@ -8,10 +8,14 @@
 
 export default class CrtText extends HTMLElement
 {
-    constructor()
+    constructor(text?: string)
     {
         super();
         this.classList.add("crt-text");
+
+        if (text) {
+            this.append(new Text(text));
+        }
     }
 }
 

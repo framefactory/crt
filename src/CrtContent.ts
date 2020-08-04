@@ -6,13 +6,13 @@
  * @license MIT
  */
 
-export default class CrtBlock extends HTMLElement
+export default class CrtContent extends HTMLElement
 {
     constructor()
     {
         super();
-        this.classList.add("crt-block");
+        this.classList.add("crt-content", "crt-glitch");
     }
 }
 
-customElements.define("crt-block", CrtBlock);
+customElements.define("crt-content", CrtContent);

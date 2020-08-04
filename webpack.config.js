@@ -239,7 +239,8 @@ WEBPACK - COMPONENT BUILD CONFIGURATION
             sockHost: process.env["DEV_SERVER_WEBSOCKET_HOST"],
             sockPort: process.env["DEV_SERVER_WEBSOCKET_PORT"],
             port: process.env["DEV_SERVER_PORT"],
-            disableHostCheck: true
+            disableHostCheck: true,
+            https: false,
         }
     };
 }
