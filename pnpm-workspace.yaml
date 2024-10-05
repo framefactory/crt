@@ -1,0 +1,4 @@
+packages:
+  - "libs/core"
+  - "libs/browser"
+  - "libs/lit"

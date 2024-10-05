@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        //"strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "checkJs": false,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "useDefineForClassFields": false,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "jsx": "react",
+  
+        "target": "ES2021",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+  
+        "sourceMap": true,
+        "noEmit": true,
+
+        "baseUrl": "..",
+        "paths": {
+            "@ffweb/core/*": [ "libs/core/src/*" ],
+            "@ffweb/browser/*": [ "libs/browser/src/*" ],
+            "@ffweb/lit/*": [ "libs/lit/src/*" ]
+        }
+    }
+}
