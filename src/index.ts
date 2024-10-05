@@ -7,13 +7,15 @@
  */
 
 import "./styles/styles.scss";
-import CrtScreen from "./CrtScreen";
-import CrtContent from "./CrtContent";
-import CrtTyped from "./CrtTyped";
-import "./CrtText";
-import "./CrtCursor";
+
+import CrtScreen from "./CrtScreen.js";
+import CrtContent from "./CrtContent.js";
+import CrtTyped from "./CrtTyped.js";
+import "./CrtText.js";
+import "./CrtCursor.js";
 
 import headerText from "!raw-loader!./content/header.txt";
+console.log(headerText);
 
 ////////////////////////////////////////////////////////////////////////////////
 

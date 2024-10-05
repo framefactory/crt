@@ -229,7 +229,12 @@ WEBPACK - COMPONENT BUILD CONFIGURATION
                 {
                     // Raw text and shader files
                     test: /\.(txt|glsl|hlsl|frag|vert|fs|vs)$/,
-                    type: "asset/source"
+                    use: [{
+                        loader: "raw-loader",
+                        options: {
+                            esModule: false,
+                        },
+                    }]
                 },
                 {
                     // SCSS

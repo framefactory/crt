@@ -4,8 +4,9 @@
 .cache/
 node_modules/
 
-doc/
+assets/
 public/
+doc/
 
 # FILES
 .env

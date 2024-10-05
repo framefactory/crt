@@ -56,7 +56,7 @@ export default utils.createWebpackConfig({
             // see https://webpack.js.org/configuration/target/
             target: "web",
             // page title
-            title: "Lit App",
+            title: "CRT",
             // component version, uses project version if omitted
             version: projectVersion,
             // entry point relative to source folder

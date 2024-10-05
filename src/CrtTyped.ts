@@ -6,7 +6,7 @@
  * @license MIT
  */
 
-import CrtCursor from "./CrtCursor";
+import CrtCursor from "./CrtCursor.js";
 
 ////////////////////////////////////////////////////////////////////////////////
 
