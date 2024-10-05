@@ -114,7 +114,6 @@ body {
     content: "";
     @include fullsize;
 
-    animation: flicker 0.08s infinite;
     background: $scanlines;
     background-size: 100% $scanlines-width;
     z-index: 1;
@@ -147,7 +146,7 @@ body {
 }
 
 .crt-glitch {
-  animation: glitch 11s infinite step-end, flicker 0.08s infinite;
+  animation: glitch 11s infinite step-end;
 }
 
 .crt-block {

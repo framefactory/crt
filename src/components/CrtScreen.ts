@@ -1,8 +1,6 @@
 /**
- * CRT
- *
- * @author Ralph Wiedemeier <ralph@framefactory.ch>
- * @copyright (c) 2020 Frame Factory GmbH
+ * CRT - Analog screen effects for web applications.
+ * Copyright 2024 Ralph Wiedemeier, Frame Factory GmbH
  * @license MIT
  */
 
